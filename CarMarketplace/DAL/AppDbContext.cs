@@ -6,7 +6,6 @@ namespace DAL;
 public class AppDbContext : DbContext
 {
     
-    
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
         
@@ -15,8 +14,6 @@ public class AppDbContext : DbContext
         // dotnet ef database update --project DAL --startup-project WebApp 
         // dotnet ef database drop --project DAL --startup-project WebApp 
         
-        // installeerida macil !!!!!!!!!!!!!!!!!
-        // dotnet tool install --global dotnet-aspnet-codegenerator
         
         // SCAFFOLDING - cd WebApp
         // dotnet aspnet-codegenerator razorpage -m Contributor -outDir Pages/Contributors -dc AppDbContext -udl --referenceScriptLibraries
